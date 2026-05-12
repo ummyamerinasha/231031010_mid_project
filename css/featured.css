@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY DEFAULT */
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  background-color: #000000;
+  color: #000000;
+}
+
+
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ======================== Navigation and Hero Full Container======================== */
+.nav-hero{
+    width: 100%;
+    height: 900px;
+    background-image: url(../res/featured/featuredbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ------logo+menu------ */
+.nav {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+}
+
+/* -----logo only------ */
+.logo img{
+    width: 200px;
+}
+
+
+/* ------menu only------- */
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 60px;
+}
+
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 10px;  
+    margin-left: 20px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: Inter;
+    font-size: 16px;
+    color:  #E8E8E8;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.08px;
+}
+.menu li a:hover{
+  border-color: #f97316;
+  color: #f97316;
+}
+
+.login-btn {
+font-size: 16px;
+display: flex;
+padding: 12px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+}
+
+.login-btn:hover {
+  background: #ea6c0b;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* --------Hero-Section------ */
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    margin-left: 80px;
+    height: 900px;   /* nav-hero er same height */
+    text-align: left;
+    margin-top: -50px;/* nav er niche anar jonno */
+}
+/* HERO TEXT */
+.hero h1 {
+  color: #F9F9F9;
+  text-align: center;
+  font-family: "Francois One";
+  font-size: 76px;
+  font-weight: 400;
+  line-height: 91.2px;
+  letter-spacing: -1.14px;
+}
+
+.featured-btn {
+font-size: 20px;
+color: #ffffff;
+padding: 12px 24px;
+border-radius: 8px;
+background: #ea6c0b;
+}
+.featured-btn:hover {
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.hero-btn {
+font-size: 20px;
+color: #ffffff;
+padding: 12px 24px;
+margin-right: 20px;
+border-radius: 10px;
+border: 1px solid rgba(255, 255, 255, 0.30);
+background: rgba(206, 105, 17, 0.40);
+}
+
+.hero-btn:hover {
+  background: #ea6c0b;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
+.hero p {
+  color: #F9F9F9;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.1px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* ================= Tour Overview--Heading+Card Container================= */
+
+.tour-details-wrapper{
+  width: 100%;
+  max-width: 1400px;
+
+  margin: 80px auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 40px;
+}
+
+/* LEFT IMAGE */
+
+.tour-image-left{
+  width: 70%;
+}
+
+.tour-image-left img{
+  width: 60%;
+  display: block;
+  border-radius: 18px;
+}
+
+h1, h2, p {
+  color: white;
+}
+/* RIGHT IMAGE */
+
+.tour-image-right{
+  width: 30%;
+  position: sticky;
+  top: 40px;
+}
+
+.tour-image-right img{
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+
+
+/* ===================================Footer================================ */
+
+.footer-outer {
+    background: #000000;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 10px;
+  }
+ 
+  /* ── Inner card (rounded border) ── */
+
+    .footer-card {
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 40px 48px;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 25px;
+    background-color: rgba(26, 26, 26, 0.48);
+  }
+ 
+  /* ── Brand column ── */
+  .footer-brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+ 
+  .footer-logo-icon {
+    width: 42px;
+    height: 42px;
+    position: relative;
+    flex-shrink: 0;
+  }
+ 
+  .footer-logo-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+ 
+  .footer-brand-name {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+  }
+ 
+
+ 
+  .footer-brand-desc {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.75;
+    margin-bottom: 24px;
+    max-width: 280px;
+  }
+ 
+  .footer-social-row {
+    display: flex;
+    gap: 10px;
+  }
+ 
+  .footer-social-btn {
+    width: 42px;
+    height: 42px;
+    background: #1f2937;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    text-decoration: none;
+  }
+ 
+  .footer-social-btn:hover {
+    background: #F97316;
+    border-color: #F97316;
+  }
+ 
+  .footer-social-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #9ca3af;
+    transition: fill 0.2s;
+  }
+ 
+  .footer-social-btn:hover svg {
+    fill: #fff;
+  }
+ 
+  /* ── Link columns ── */
+  .footer-col-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #F97316;
+    margin-bottom: 24px;
+  }
+ 
+  .footer-col-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+ 
+  .footer-col-list li a {
+    color: #d1d5db;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    transition: color 0.2s;
+  }
+ 
+  .footer-col-list li a:hover {
+    color: #F97316;
+  }
+ 
+  /* ── Bottom bar ── */
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 24px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+ 
+  .footer-copyright {
+    font-size: 12px;
+    color: #6b7280;
+    font-family: 'Open Sans', sans-serif;
+  }
+ 
+  .footer-payments {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
